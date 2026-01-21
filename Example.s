@@ -31,7 +31,9 @@ main:
 
     # li x10, 0x78786464
     # li x11,  0xA8A81919
-    
+    # sw x10, 0x100(x0)
+    # sw x11, 0x1F0 (x0)
+
     # li x5, 0x100 #temp reg
     # lhu x12, 0(x5)
 
@@ -42,17 +44,48 @@ main:
     # lb x14, 0(x7)
 
 
-    #i=0
+
     li x10, 0x100
+    li x11, 0x200    
+    li x12, 0x300
+
+    ###ARRAY INITIALIZATION###
+    #a[0]=1
+    li x01, 1 
+    sb x01, 0(x10)
+    #a[1]=2
+    li x01, 2 
+    sb x01, 1(x10)
+    #a[2]=3
+    li x01, 3 
+    sb x01, 2(x10)
+    #a[3]=4
+    li x01, 4 
+    sb x01, 3(x10)
+
+    #b[0]=10
+    li x01, 10 
+    sb x01, 0(x11)
+    #b[1]=20
+    li x01, 20 
+    sb x01, 2(x11)
+    #b[2]=30
+    li x01, 30
+    sb x01, 4(x11)
+    #b[3]=40
+    li x01, 40 
+    sb x01, 6(x11)
+
+    ###COMPUTATION IN THE LOOPS###
+    
+    #i=0
     lb x20, 0(x10)
 
-    li x11, 0x200
     lh x21, 0(x11)
-
-    li x12, 0x300
 
     add x22, x20, x21
     sw x22, 0(x12)
+
 
     #i=1
     lb x20, 1(x10)
