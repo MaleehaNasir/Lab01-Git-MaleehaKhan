@@ -27,4 +27,5 @@ while:
     addi x4, x4, 1 #i++
     beq x0, x0, while
 exit:
+
     
