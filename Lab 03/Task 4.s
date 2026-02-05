@@ -26,7 +26,7 @@ loop1:
     addi x10, x10, 4
     addi x11, x11, 4
     addi x19, x19, 1
-    j loop
+    j loop1
 
 exit:
     lw x11, 8(sp)
