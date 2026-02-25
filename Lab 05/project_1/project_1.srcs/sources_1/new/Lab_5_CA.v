@@ -24,54 +24,45 @@ module fsm_counter(
     input clk,
     input reset,
     input tick, //clock divider
-    input [15:0] switch_value, //switches
-    output reg[15:0] count
+    input [15:0] switch_value,
+    output reg [15:0] count,
+    output reg [15:0] leds
     );
     
-    parameter WAIT =1'b0;
-    parameter COUNT =1'b1;
-    
-    reg state, next_state;
-    always @(posedge clk or posedge reset) begin
-        if (reset)
-            state<=WAIT;
-        else
-            state<=next_state;
-    end
-    
-    always @(*) begin
-        case(state)
-            WAIT:
-                if (switch_value != 0)
-                    next_state = COUNT;
-                else
-                    next_state = WAIT;
-
-            COUNT:
-                if (count == 0)
-                    next_state = WAIT;
-                else
-                    next_state = COUNT;
-
-            default:
-                next_state = WAIT;
-
-        endcase
-    end
+    parameter COUNT =1'b0;
+    parameter WAIT = 1'b1;
+        
+    reg state;
     
     always @(posedge clk or posedge reset) begin
-        if (reset)
-            count<=0;
+        if (reset) begin
+            state<= WAIT;
+            count <= 0;
+            leds<=0;
+        end
         else begin
-            case(state)
-                WAIT: 
-                    count<=switch_value;
-                COUNT:
-                    if(tick && count>0)
-                        count <= count-1;
+            case (state)
+                WAIT: begin
+                    if(switch_value !=0) begin
+                        count<=switch_value;   //768
+                        leds<=switch_value;
+                        state<=COUNT;
+                    end
+                end
+                COUNT: begin
+                    if (tick) begin
+                        if (count > 0) begin
+                            count <= count - 1;
+                            leds <= count - 1;
+                        end 
+                        else begin
+                            state <= WAIT;
+                            leds <= 0;
+                        end
+                    end
+                end
             endcase
         end
     end
-    
      
 endmodule

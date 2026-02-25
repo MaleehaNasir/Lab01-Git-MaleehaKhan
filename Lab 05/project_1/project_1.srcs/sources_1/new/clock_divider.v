@@ -32,7 +32,7 @@ module clock_divider(
             counter<=0;
             ticks<=0;
         end 
-        else if (counter==20 - 1) begin //for simulation 20 warna change to 100_000_000 - 1
+        else if (counter==100_000_000 - 1) begin //for simulation 20 warna change to 100_000_000 - 1
             counter<=0;
             ticks<=1;
         end

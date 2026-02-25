@@ -1,0 +1,21 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+
+=== TESTCASE 3: New input during countdown ===
+Time=50000  LED=7
+Time=110000  LED=6
+Time=170000  LED=5
+Time=230000  LED=4
+>>> Changing switch to 3 during countdown
+Time=290000  LED=3
+Time=350000  LED=2
+Time=410000  LED=1
+Time=470000  LED=0
+Time=530000  LED=3
+Time=590000  LED=2
+Time=650000  LED=1
+Time=710000  LED=0
+Time=770000  LED=3
+Time=830000  LED=2
+Time=890000  LED=1
+Time=950000  LED=0

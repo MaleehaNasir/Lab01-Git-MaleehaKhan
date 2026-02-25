@@ -1,0 +1,1681 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Feb 25 12:03:29 2026
+# Process ID: 29856
+# Current directory: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16844 C:\Users\malee\Documents\school\sem4\CA\labs\Lab01-Git-MaleehaKhan\Lab 05\project_1\project_1.xpr
+# Log file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/vivado.log
+# Journal file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1'
+INFO: [Project 1-313] Project file moved from 'C:/Users/malee/Documents/school/sem3/DLD/final project shit/DuckHunt Final/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+update_compile_order -fileset sources_1
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/priority_encoder.v} w ]
+add_files {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/priority_encoder.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/priority_encoder.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/priority_encoder.v}}
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v} w ]
+add_files {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new}
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v} w ]
+add_files -fileset sim_1 {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v}}
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top_module
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1375.727 ; gain = 168.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:31]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+ERROR: [Synth 8-448] named port connection 'tick' does not exist for instance 'u1' of module 'clock_divider' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:31]
+INFO: [Synth 8-6157] synthesizing module 'fsm_counter' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+	Parameter COUNT bound to: 1'b0 
+	Parameter WAIT bound to: 1'b1 
+ERROR: [Synth 8-6156] failed synthesizing module 'fsm_counter' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top_module' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1446.766 ; gain = 239.508
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+5 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1446.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm_counter' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+	Parameter COUNT bound to: 1'b0 
+	Parameter WAIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'fsm_counter' (2#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (3#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1446.766 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1530.199 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1536.027 ; gain = 89.262
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1536.027 ; gain = 89.262
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_module' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj top_module_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1536.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_module_behav xil_defaultlib.top_module xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_module_behav xil_defaultlib.top_module xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.fsm_counter
+Compiling module xil_defaultlib.top_module
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_module_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab -notrace
+couldn't read file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 25 13:52:46 2026...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1536.027 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_module_behav -key {Behavioral:sim_1:Functional:top_module} -tclbatch {top_module.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source top_module.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_module_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1551.473 ; gain = 15.445
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_counter
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab -notrace
+couldn't read file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 25 13:57:27 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1552.906 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time=50000  LED=768
+Time=110000  LED=767
+Time=170000  LED=766
+Time=230000  LED=765
+Time=290000  LED=764
+Time=350000  LED=763
+Time=410000  LED=762
+Time=470000  LED=761
+Time=530000  LED=760
+Time=590000  LED=759
+Time=650000  LED=758
+Time=710000  LED=757
+Time=770000  LED=756
+Time=830000  LED=755
+Time=890000  LED=754
+Time=950000  LED=753
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1599.848 ; gain = 10.941
+run all
+Time=1010000  LED=752
+Time=1070000  LED=751
+Time=1130000  LED=750
+Time=1190000  LED=749
+Time=1250000  LED=748
+Time=1310000  LED=747
+Time=1370000  LED=746
+Time=1430000  LED=745
+Time=1490000  LED=744
+Time=1550000  LED=743
+Time=1610000  LED=742
+Time=1670000  LED=741
+Time=1730000  LED=740
+Time=1790000  LED=739
+Time=1850000  LED=738
+Time=1910000  LED=737
+Time=1970000  LED=736
+Time=2030000  LED=735
+Time=2090000  LED=734
+Time=2150000  LED=733
+Time=2210000  LED=732
+Time=2270000  LED=731
+Time=2330000  LED=730
+Time=2390000  LED=729
+Time=2450000  LED=728
+Time=2510000  LED=727
+Time=2570000  LED=726
+Time=2630000  LED=725
+Time=2690000  LED=724
+Time=2750000  LED=723
+Time=2810000  LED=722
+Time=2870000  LED=721
+Time=2930000  LED=720
+Time=2990000  LED=719
+Time=3050000  LED=718
+Time=3110000  LED=717
+Time=3170000  LED=716
+Time=3230000  LED=715
+Time=3290000  LED=714
+Time=3350000  LED=713
+Time=3410000  LED=712
+Time=3470000  LED=711
+Time=3530000  LED=710
+Time=3590000  LED=709
+Time=3650000  LED=708
+Time=3710000  LED=707
+Time=3770000  LED=706
+Time=3830000  LED=705
+Time=3890000  LED=704
+Time=3950000  LED=703
+Time=4010000  LED=702
+Time=4070000  LED=701
+Time=4130000  LED=700
+Time=4190000  LED=699
+Time=4250000  LED=698
+Time=4310000  LED=697
+Time=4370000  LED=696
+Time=4430000  LED=695
+Time=4490000  LED=694
+Time=4550000  LED=693
+Time=4610000  LED=692
+Time=4670000  LED=691
+Time=4730000  LED=690
+Time=4790000  LED=689
+Time=4850000  LED=688
+Time=4910000  LED=687
+Time=4970000  LED=686
+Time=5030000  LED=685
+Time=5090000  LED=684
+Time=5150000  LED=683
+Time=5210000  LED=682
+Time=5270000  LED=681
+Time=5330000  LED=680
+Time=5390000  LED=679
+Time=5450000  LED=678
+Time=5510000  LED=677
+Time=5570000  LED=676
+Time=5630000  LED=675
+Time=5690000  LED=674
+Time=5750000  LED=673
+Time=5810000  LED=672
+Time=5870000  LED=671
+Time=5930000  LED=670
+Time=5990000  LED=669
+Time=6050000  LED=668
+Time=6110000  LED=667
+Time=6170000  LED=666
+Time=6230000  LED=665
+Time=6290000  LED=664
+Time=6350000  LED=663
+Time=6410000  LED=662
+Time=6470000  LED=661
+Time=6530000  LED=660
+Time=6590000  LED=659
+Time=6650000  LED=658
+Time=6710000  LED=657
+Time=6770000  LED=656
+Time=6830000  LED=655
+Time=6890000  LED=654
+Time=6950000  LED=653
+Time=7010000  LED=652
+Time=7070000  LED=651
+Time=7130000  LED=650
+Time=7190000  LED=649
+Time=7250000  LED=648
+Time=7310000  LED=647
+Time=7370000  LED=646
+Time=7430000  LED=645
+Time=7490000  LED=644
+Time=7550000  LED=643
+Time=7610000  LED=642
+Time=7670000  LED=641
+Time=7730000  LED=640
+Time=7790000  LED=639
+Time=7850000  LED=638
+Time=7910000  LED=637
+Time=7970000  LED=636
+Time=8030000  LED=635
+Time=8090000  LED=634
+Time=8150000  LED=633
+Time=8210000  LED=632
+Time=8270000  LED=631
+Time=8330000  LED=630
+Time=8390000  LED=629
+Time=8450000  LED=628
+Time=8510000  LED=627
+Time=8570000  LED=626
+Time=8630000  LED=625
+Time=8690000  LED=624
+Time=8750000  LED=623
+Time=8810000  LED=622
+Time=8870000  LED=621
+Time=8930000  LED=620
+Time=8990000  LED=619
+Time=9050000  LED=618
+Time=9110000  LED=617
+Time=9170000  LED=616
+Time=9230000  LED=615
+Time=9290000  LED=614
+Time=9350000  LED=613
+Time=9410000  LED=612
+Time=9470000  LED=611
+Time=9530000  LED=610
+Time=9590000  LED=609
+Time=9650000  LED=608
+Time=9710000  LED=607
+Time=9770000  LED=606
+Time=9830000  LED=605
+Time=9890000  LED=604
+Time=9950000  LED=603
+Time=10010000  LED=602
+Time=10070000  LED=601
+Time=10130000  LED=600
+Time=10190000  LED=599
+Time=10250000  LED=598
+Time=10310000  LED=597
+Time=10370000  LED=596
+Time=10430000  LED=595
+Time=10490000  LED=594
+Time=10550000  LED=593
+Time=10610000  LED=592
+Time=10670000  LED=591
+Time=10730000  LED=590
+Time=10790000  LED=589
+Time=10850000  LED=588
+Time=10910000  LED=587
+Time=10970000  LED=586
+Time=11030000  LED=585
+Time=11090000  LED=584
+Time=11150000  LED=583
+Time=11210000  LED=582
+Time=11270000  LED=581
+Time=11330000  LED=580
+Time=11390000  LED=579
+Time=11450000  LED=578
+Time=11510000  LED=577
+Time=11570000  LED=576
+Time=11630000  LED=575
+Time=11690000  LED=574
+Time=11750000  LED=573
+Time=11810000  LED=572
+Time=11870000  LED=571
+Time=11930000  LED=570
+Time=11990000  LED=569
+Time=12050000  LED=568
+Time=12110000  LED=567
+Time=12170000  LED=566
+Time=12230000  LED=565
+Time=12290000  LED=564
+Time=12350000  LED=563
+Time=12410000  LED=562
+Time=12470000  LED=561
+Time=12530000  LED=560
+Time=12590000  LED=559
+Time=12650000  LED=558
+Time=12710000  LED=557
+Time=12770000  LED=556
+Time=12830000  LED=555
+Time=12890000  LED=554
+Time=12950000  LED=553
+Time=13010000  LED=552
+Time=13070000  LED=551
+Time=13130000  LED=550
+Time=13190000  LED=549
+Time=13250000  LED=548
+Time=13310000  LED=547
+Time=13370000  LED=546
+Time=13430000  LED=545
+Time=13490000  LED=544
+Time=13550000  LED=543
+Time=13610000  LED=542
+Time=13670000  LED=541
+Time=13730000  LED=540
+Time=13790000  LED=539
+Time=13850000  LED=538
+Time=13910000  LED=537
+Time=13970000  LED=536
+Time=14030000  LED=535
+Time=14090000  LED=534
+Time=14150000  LED=533
+Time=14210000  LED=532
+Time=14270000  LED=531
+Time=14330000  LED=530
+Time=14390000  LED=529
+Time=14450000  LED=528
+Time=14510000  LED=527
+Time=14570000  LED=526
+Time=14630000  LED=525
+Time=14690000  LED=524
+Time=14750000  LED=523
+Time=14810000  LED=522
+Time=14870000  LED=521
+Time=14930000  LED=520
+Time=14990000  LED=519
+Time=15050000  LED=518
+Time=15110000  LED=517
+Time=15170000  LED=516
+Time=15230000  LED=515
+Time=15290000  LED=514
+Time=15350000  LED=513
+Time=15410000  LED=512
+Time=15470000  LED=511
+Time=15530000  LED=510
+Time=15590000  LED=509
+Time=15650000  LED=508
+Time=15710000  LED=507
+Time=15770000  LED=506
+Time=15830000  LED=505
+Time=15890000  LED=504
+Time=15950000  LED=503
+Time=16010000  LED=502
+Time=16070000  LED=501
+Time=16130000  LED=500
+Time=16190000  LED=499
+Time=16250000  LED=498
+Time=16310000  LED=497
+Time=16370000  LED=496
+Time=16430000  LED=495
+Time=16490000  LED=494
+Time=16550000  LED=493
+Time=16610000  LED=492
+Time=16670000  LED=491
+Time=16730000  LED=490
+Time=16790000  LED=489
+Time=16850000  LED=488
+Time=16910000  LED=487
+Time=16970000  LED=486
+Time=17030000  LED=485
+Time=17090000  LED=484
+Time=17150000  LED=483
+Time=17210000  LED=482
+Time=17270000  LED=481
+Time=17330000  LED=480
+Time=17390000  LED=479
+Time=17450000  LED=478
+Time=17510000  LED=477
+Time=17570000  LED=476
+Time=17630000  LED=475
+Time=17690000  LED=474
+Time=17750000  LED=473
+Time=17810000  LED=472
+Time=17870000  LED=471
+Time=17930000  LED=470
+Time=17990000  LED=469
+Time=18050000  LED=468
+Time=18110000  LED=467
+Time=18170000  LED=466
+Time=18230000  LED=465
+Time=18290000  LED=464
+Time=18350000  LED=463
+Time=18410000  LED=462
+Time=18470000  LED=461
+Time=18530000  LED=460
+Time=18590000  LED=459
+Time=18650000  LED=458
+Time=18710000  LED=457
+Time=18770000  LED=456
+Time=18830000  LED=455
+Time=18890000  LED=454
+Time=18950000  LED=453
+Time=19010000  LED=452
+Time=19070000  LED=451
+Time=19130000  LED=450
+Time=19190000  LED=449
+Time=19250000  LED=448
+Time=19310000  LED=447
+Time=19370000  LED=446
+Time=19430000  LED=445
+Time=19490000  LED=444
+Time=19550000  LED=443
+Time=19610000  LED=442
+Time=19670000  LED=441
+Time=19730000  LED=440
+Time=19790000  LED=439
+Time=19850000  LED=438
+Time=19910000  LED=437
+Time=19970000  LED=436
+Time=20030000  LED=435
+Time=20090000  LED=434
+Time=20150000  LED=433
+Time=20210000  LED=432
+Time=20270000  LED=431
+Time=20330000  LED=430
+Time=20390000  LED=429
+Time=20450000  LED=428
+Time=20510000  LED=427
+Time=20570000  LED=426
+Time=20630000  LED=425
+Time=20690000  LED=424
+Time=20750000  LED=423
+Time=20810000  LED=422
+Time=20870000  LED=421
+Time=20930000  LED=420
+Time=20990000  LED=419
+Time=21050000  LED=418
+Time=21110000  LED=417
+Time=21170000  LED=416
+Time=21230000  LED=415
+Time=21290000  LED=414
+Time=21350000  LED=413
+Time=21410000  LED=412
+Time=21470000  LED=411
+Time=21530000  LED=410
+Time=21590000  LED=409
+Time=21650000  LED=408
+Time=21710000  LED=407
+Time=21770000  LED=406
+Time=21830000  LED=405
+Time=21890000  LED=404
+Time=21950000  LED=403
+Time=22010000  LED=402
+Time=22070000  LED=401
+Time=22130000  LED=400
+Time=22190000  LED=399
+Time=22250000  LED=398
+Time=22310000  LED=397
+Time=22370000  LED=396
+Time=22430000  LED=395
+Time=22490000  LED=394
+Time=22550000  LED=393
+Time=22610000  LED=392
+Time=22670000  LED=391
+Time=22730000  LED=390
+Time=22790000  LED=389
+Time=22850000  LED=388
+Time=22910000  LED=387
+Time=22970000  LED=386
+Time=23030000  LED=385
+Time=23090000  LED=384
+Time=23150000  LED=383
+Time=23210000  LED=382
+Time=23270000  LED=381
+Time=23330000  LED=380
+Time=23390000  LED=379
+Time=23450000  LED=378
+Time=23510000  LED=377
+Time=23570000  LED=376
+Time=23630000  LED=375
+Time=23690000  LED=374
+Time=23750000  LED=373
+Time=23810000  LED=372
+Time=23870000  LED=371
+Time=23930000  LED=370
+Time=23990000  LED=369
+Time=24050000  LED=368
+Time=24110000  LED=367
+Time=24170000  LED=366
+Time=24230000  LED=365
+Time=24290000  LED=364
+Time=24350000  LED=363
+Time=24410000  LED=362
+Time=24470000  LED=361
+Time=24530000  LED=360
+Time=24590000  LED=359
+Time=24650000  LED=358
+Time=24710000  LED=357
+Time=24770000  LED=356
+Time=24830000  LED=355
+Time=24890000  LED=354
+Time=24950000  LED=353
+Time=25010000  LED=352
+Time=25070000  LED=351
+Time=25130000  LED=350
+Time=25190000  LED=349
+Time=25250000  LED=348
+Time=25310000  LED=347
+Time=25370000  LED=346
+Time=25430000  LED=345
+Time=25490000  LED=344
+Time=25550000  LED=343
+Time=25610000  LED=342
+Time=25670000  LED=341
+Time=25730000  LED=340
+Time=25790000  LED=339
+Time=25850000  LED=338
+Time=25910000  LED=337
+Time=25970000  LED=336
+Time=26030000  LED=335
+Time=26090000  LED=334
+Time=26150000  LED=333
+Time=26210000  LED=332
+Time=26270000  LED=331
+Time=26330000  LED=330
+Time=26390000  LED=329
+Time=26450000  LED=328
+Time=26510000  LED=327
+Time=26570000  LED=326
+Time=26630000  LED=325
+Time=26690000  LED=324
+Time=26750000  LED=323
+Time=26810000  LED=322
+Time=26870000  LED=321
+Time=26930000  LED=320
+Time=26990000  LED=319
+Time=27050000  LED=318
+Time=27110000  LED=317
+Time=27170000  LED=316
+Time=27230000  LED=315
+Time=27290000  LED=314
+Time=27350000  LED=313
+Time=27410000  LED=312
+Time=27470000  LED=311
+Time=27530000  LED=310
+Time=27590000  LED=309
+Time=27650000  LED=308
+Time=27710000  LED=307
+Time=27770000  LED=306
+Time=27830000  LED=305
+Time=27890000  LED=304
+Time=27950000  LED=303
+Time=28010000  LED=302
+Time=28070000  LED=301
+Time=28130000  LED=300
+Time=28190000  LED=299
+Time=28250000  LED=298
+Time=28310000  LED=297
+Time=28370000  LED=296
+Time=28430000  LED=295
+Time=28490000  LED=294
+Time=28550000  LED=293
+Time=28610000  LED=292
+Time=28670000  LED=291
+Time=28730000  LED=290
+Time=28790000  LED=289
+Time=28850000  LED=288
+Time=28910000  LED=287
+Time=28970000  LED=286
+Time=29030000  LED=285
+Time=29090000  LED=284
+Time=29150000  LED=283
+Time=29210000  LED=282
+Time=29270000  LED=281
+Time=29330000  LED=280
+Time=29390000  LED=279
+Time=29450000  LED=278
+Time=29510000  LED=277
+Time=29570000  LED=276
+Time=29630000  LED=275
+Time=29690000  LED=274
+Time=29750000  LED=273
+Time=29810000  LED=272
+Time=29870000  LED=271
+Time=29930000  LED=270
+Time=29990000  LED=269
+Time=30050000  LED=268
+Time=30110000  LED=267
+Time=30170000  LED=266
+Time=30230000  LED=265
+Time=30290000  LED=264
+Time=30350000  LED=263
+Time=30410000  LED=262
+Time=30470000  LED=261
+Time=30530000  LED=260
+Time=30590000  LED=259
+Time=30650000  LED=258
+Time=30710000  LED=257
+Time=30770000  LED=256
+Time=30830000  LED=255
+Time=30890000  LED=254
+Time=30950000  LED=253
+Time=31010000  LED=252
+Time=31070000  LED=251
+Time=31130000  LED=250
+Time=31190000  LED=249
+Time=31250000  LED=248
+Time=31310000  LED=247
+Time=31370000  LED=246
+Time=31430000  LED=245
+Time=31490000  LED=244
+Time=31550000  LED=243
+Time=31610000  LED=242
+Time=31670000  LED=241
+Time=31730000  LED=240
+Time=31790000  LED=239
+Time=31850000  LED=238
+Time=31910000  LED=237
+Time=31970000  LED=236
+Time=32030000  LED=235
+Time=32090000  LED=234
+Time=32150000  LED=233
+Time=32210000  LED=232
+Time=32270000  LED=231
+Time=32330000  LED=230
+Time=32390000  LED=229
+Time=32450000  LED=228
+Time=32510000  LED=227
+Time=32570000  LED=226
+Time=32630000  LED=225
+Time=32690000  LED=224
+Time=32750000  LED=223
+Time=32810000  LED=222
+Time=32870000  LED=221
+Time=32930000  LED=220
+Time=32990000  LED=219
+Time=33050000  LED=218
+Time=33110000  LED=217
+Time=33170000  LED=216
+Time=33230000  LED=215
+Time=33290000  LED=214
+Time=33350000  LED=213
+Time=33410000  LED=212
+Time=33470000  LED=211
+Time=33530000  LED=210
+Time=33590000  LED=209
+Time=33650000  LED=208
+Time=33710000  LED=207
+Time=33770000  LED=206
+Time=33830000  LED=205
+Time=33890000  LED=204
+Time=33950000  LED=203
+Time=34010000  LED=202
+Time=34070000  LED=201
+Time=34130000  LED=200
+Time=34190000  LED=199
+Time=34250000  LED=198
+Time=34310000  LED=197
+Time=34370000  LED=196
+Time=34430000  LED=195
+Time=34490000  LED=194
+Time=34550000  LED=193
+Time=34610000  LED=192
+Time=34670000  LED=191
+Time=34730000  LED=190
+Time=34790000  LED=189
+Time=34850000  LED=188
+Time=34910000  LED=187
+Time=34970000  LED=186
+Time=35030000  LED=185
+Time=35090000  LED=184
+Time=35150000  LED=183
+Time=35210000  LED=182
+Time=35270000  LED=181
+Time=35330000  LED=180
+Time=35390000  LED=179
+Time=35450000  LED=178
+Time=35510000  LED=177
+Time=35570000  LED=176
+Time=35630000  LED=175
+Time=35690000  LED=174
+Time=35750000  LED=173
+Time=35810000  LED=172
+Time=35870000  LED=171
+Time=35930000  LED=170
+Time=35990000  LED=169
+Time=36050000  LED=168
+Time=36110000  LED=167
+Time=36170000  LED=166
+Time=36230000  LED=165
+Time=36290000  LED=164
+Time=36350000  LED=163
+Time=36410000  LED=162
+Time=36470000  LED=161
+Time=36530000  LED=160
+Time=36590000  LED=159
+Time=36650000  LED=158
+Time=36710000  LED=157
+Time=36770000  LED=156
+Time=36830000  LED=155
+Time=36890000  LED=154
+Time=36950000  LED=153
+Time=37010000  LED=152
+Time=37070000  LED=151
+Time=37130000  LED=150
+Time=37190000  LED=149
+Time=37250000  LED=148
+Time=37310000  LED=147
+Time=37370000  LED=146
+Time=37430000  LED=145
+Time=37490000  LED=144
+Time=37550000  LED=143
+Time=37610000  LED=142
+Time=37670000  LED=141
+Time=37730000  LED=140
+Time=37790000  LED=139
+Time=37850000  LED=138
+Time=37910000  LED=137
+Time=37970000  LED=136
+Time=38030000  LED=135
+Time=38090000  LED=134
+Time=38150000  LED=133
+Time=38210000  LED=132
+Time=38270000  LED=131
+Time=38330000  LED=130
+Time=38390000  LED=129
+Time=38450000  LED=128
+Time=38510000  LED=127
+Time=38570000  LED=126
+Time=38630000  LED=125
+Time=38690000  LED=124
+Time=38750000  LED=123
+Time=38810000  LED=122
+Time=38870000  LED=121
+Time=38930000  LED=120
+Time=38990000  LED=119
+Time=39050000  LED=118
+Time=39110000  LED=117
+Time=39170000  LED=116
+Time=39230000  LED=115
+Time=39290000  LED=114
+Time=39350000  LED=113
+Time=39410000  LED=112
+Time=39470000  LED=111
+Time=39530000  LED=110
+Time=39590000  LED=109
+Time=39650000  LED=108
+Time=39710000  LED=107
+Time=39770000  LED=106
+Time=39830000  LED=105
+Time=39890000  LED=104
+Time=39950000  LED=103
+Time=40010000  LED=102
+Time=40070000  LED=101
+Time=40130000  LED=100
+Time=40190000  LED=99
+Time=40250000  LED=98
+Time=40310000  LED=97
+Time=40370000  LED=96
+Time=40430000  LED=95
+Time=40490000  LED=94
+Time=40550000  LED=93
+Time=40610000  LED=92
+Time=40670000  LED=91
+Time=40730000  LED=90
+Time=40790000  LED=89
+Time=40850000  LED=88
+Time=40910000  LED=87
+Time=40970000  LED=86
+Time=41030000  LED=85
+Time=41090000  LED=84
+Time=41150000  LED=83
+Time=41210000  LED=82
+Time=41270000  LED=81
+Time=41330000  LED=80
+Time=41390000  LED=79
+Time=41450000  LED=78
+Time=41510000  LED=77
+Time=41570000  LED=76
+Time=41630000  LED=75
+Time=41690000  LED=74
+Time=41750000  LED=73
+Time=41810000  LED=72
+Time=41870000  LED=71
+Time=41930000  LED=70
+Time=41990000  LED=69
+Time=42050000  LED=68
+Time=42110000  LED=67
+Time=42170000  LED=66
+Time=42230000  LED=65
+Time=42290000  LED=64
+Time=42350000  LED=63
+Time=42410000  LED=62
+Time=42470000  LED=61
+Time=42530000  LED=60
+Time=42590000  LED=59
+Time=42650000  LED=58
+Time=42710000  LED=57
+Time=42770000  LED=56
+Time=42830000  LED=55
+Time=42890000  LED=54
+Time=42950000  LED=53
+Time=43010000  LED=52
+Time=43070000  LED=51
+Time=43130000  LED=50
+Time=43190000  LED=49
+Time=43250000  LED=48
+Time=43310000  LED=47
+Time=43370000  LED=46
+Time=43430000  LED=45
+Time=43490000  LED=44
+Time=43550000  LED=43
+Time=43610000  LED=42
+Time=43670000  LED=41
+Time=43730000  LED=40
+Time=43790000  LED=39
+Time=43850000  LED=38
+Time=43910000  LED=37
+Time=43970000  LED=36
+Time=44030000  LED=35
+Time=44090000  LED=34
+Time=44150000  LED=33
+Time=44210000  LED=32
+Time=44270000  LED=31
+Time=44330000  LED=30
+Time=44390000  LED=29
+Time=44450000  LED=28
+Time=44510000  LED=27
+Time=44570000  LED=26
+Time=44630000  LED=25
+Time=44690000  LED=24
+Time=44750000  LED=23
+Time=44810000  LED=22
+Time=44870000  LED=21
+Time=44930000  LED=20
+Time=44990000  LED=19
+Time=45050000  LED=18
+Time=45110000  LED=17
+Time=45170000  LED=16
+Time=45230000  LED=15
+Time=45290000  LED=14
+Time=45350000  LED=13
+Time=45410000  LED=12
+Time=45470000  LED=11
+Time=45530000  LED=10
+Time=45590000  LED=9
+Time=45650000  LED=8
+Time=45710000  LED=7
+Time=45770000  LED=6
+Time=45830000  LED=5
+Time=45890000  LED=4
+Time=45950000  LED=3
+Time=46010000  LED=2
+Time=46070000  LED=1
+Time=46130000  LED=0
+Time=46190000  LED=768
+Time=46250000  LED=767
+Time=46310000  LED=766
+Time=46370000  LED=765
+Time=46430000  LED=764
+Time=46490000  LED=763
+Time=46550000  LED=762
+Time=46610000  LED=761
+Time=46670000  LED=760
+Time=46730000  LED=759
+Time=46790000  LED=758
+Time=46850000  LED=757
+Time=46910000  LED=756
+Time=46970000  LED=755
+Time=47030000  LED=754
+Time=47090000  LED=753
+Time=47150000  LED=752
+Time=47210000  LED=751
+Time=47270000  LED=750
+Time=47330000  LED=749
+Time=47390000  LED=748
+Time=47450000  LED=747
+Time=47510000  LED=746
+Time=47570000  LED=745
+Time=47630000  LED=744
+Time=47690000  LED=743
+Time=47750000  LED=742
+Time=47810000  LED=741
+Time=47870000  LED=740
+Time=47930000  LED=739
+Time=47990000  LED=738
+Time=48050000  LED=737
+Time=48110000  LED=736
+Time=48170000  LED=735
+Time=48230000  LED=734
+Time=48290000  LED=733
+Time=48350000  LED=732
+Time=48410000  LED=731
+Time=48470000  LED=730
+Time=48530000  LED=729
+Time=48590000  LED=728
+Time=48650000  LED=727
+Time=48710000  LED=726
+Time=48770000  LED=725
+Time=48830000  LED=724
+Time=48890000  LED=723
+Time=48950000  LED=722
+Time=49010000  LED=721
+Time=49070000  LED=720
+Time=49130000  LED=719
+Time=49190000  LED=718
+Time=49250000  LED=717
+Time=49310000  LED=716
+Time=49370000  LED=715
+Time=49430000  LED=714
+Time=49490000  LED=713
+Time=49550000  LED=712
+Time=49610000  LED=711
+Time=49670000  LED=710
+Time=49730000  LED=709
+Time=49790000  LED=708
+Time=49850000  LED=707
+Time=49910000  LED=706
+Time=49970000  LED=705
+Time=50030000  LED=704
+$stop called at time : 50040 ns : File "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v" Line 67
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1713.387 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_counter
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+=== TESTCASE 1: Single number 4 ===
+Time=50000  LED=4
+Time=110000  LED=3
+Time=170000  LED=2
+Time=230000  LED=1
+Time=290000  LED=0
+Time=350000  LED=4
+Time=410000  LED=3
+Time=470000  LED=2
+Time=530000  LED=1
+Time=590000  LED=0
+Time=650000  LED=4
+Time=710000  LED=3
+Time=770000  LED=2
+Time=830000  LED=1
+Time=890000  LED=0
+Time=950000  LED=4
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1713.387 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1713.387 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_counter
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+
+=== TESTCASE 2: Reset during countdown ===
+Time=50000  LED=6
+Time=110000  LED=5
+Time=170000  LED=4
+Time=230000  LED=3
+>>> Reset pressed during countdown
+Time=290000  LED=6
+Time=350000  LED=5
+Time=410000  LED=4
+Time=470000  LED=3
+Time=530000  LED=2
+Time=590000  LED=1
+Time=650000  LED=0
+Time=710000  LED=6
+$stop called at time : 760 ns : File "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v" Line 98
+relaunch_xsim_kernel: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1713.387 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1713.387 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+ERROR: [VRFC 10-4982] syntax error near '3' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v:78]
+ERROR: [VRFC 10-552] declarations not allowed in unnamed block [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v:37]
+ERROR: [VRFC 10-2865] module 'testbench' ignored due to previous errors [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 0c4dd5c82ca048e0a4beb1f8b0a60260 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fsm_counter
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+
+=== TESTCASE 3: New input during countdown ===
+Time=50000  LED=7
+Time=110000  LED=6
+Time=170000  LED=5
+Time=230000  LED=4
+>>> Changing switch to 3 during countdown
+Time=290000  LED=3
+Time=350000  LED=2
+Time=410000  LED=1
+Time=470000  LED=0
+Time=530000  LED=3
+Time=590000  LED=2
+Time=650000  LED=1
+Time=710000  LED=0
+Time=770000  LED=3
+Time=830000  LED=2
+Time=890000  LED=1
+Time=950000  LED=0
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1713.387 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1713.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/debouncer.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:38]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+ERROR: [Synth 8-448] named port connection 'tick' does not exist for instance 'cd' of module 'clock_divider' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:41]
+INFO: [Synth 8-6157] synthesizing module 'fsm_counter' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+	Parameter COUNT bound to: 1'b0 
+	Parameter WAIT bound to: 1'b1 
+ERROR: [Synth 8-6156] failed synthesizing module 'fsm_counter' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'top_module' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1713.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+6 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1713.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm_counter' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+	Parameter COUNT bound to: 1'b0 
+	Parameter WAIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'fsm_counter' (3#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+WARNING: [Synth 8-7071] port 'count' of module 'fsm_counter' is unconnected for instance 'fsm' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:43]
+WARNING: [Synth 8-7023] instance 'fsm' of module 'fsm_counter' has 6 connections declared, but only 5 given [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (4#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1713.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1713.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1713.387 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1713.387 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1825.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1825.977 ; gain = 112.590
+11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+launch_runs synth_1 -jobs 6
+[Wed Feb 25 15:03:09 2026] Launched synth_1...
+Run output will be captured here: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Wed Feb 25 15:03:45 2026] Launched impl_1...
+Run output will be captured here: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1825.977 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1825.977 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1825.977 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1825.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[15]} {led[14]} {led[13]} {led[12]} {led[11]} {led[10]} {led[9]} {led[8]} {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sw[15]} {sw[14]} {sw[13]} {sw[12]} {sw[11]} {sw[10]} {sw[9]} {sw[8]} {sw[7]} {sw[6]} {sw[5]} {sw[4]} {sw[3]} {sw[2]} {sw[1]} {sw[0]}]]
+startgroup
+set_property package_pin "" [get_ports [list  {led[3]}]]
+place_ports {led[0]} U16
+endgroup
+place_ports {led[1]} E19
+startgroup
+set_property package_pin "" [get_ports [list  {sw[4]}]]
+place_ports {led[2]} U19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[3]}]]
+place_ports {led[3]} V19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[2]}]]
+place_ports {led[4]} W18
+endgroup
+place_ports {led[5]} U15
+place_ports {led[6]} U14
+place_ports {led[7]} V14
+place_ports {led[8]} V13
+place_ports {led[9]} V3
+place_ports {led[10]} W3
+place_ports {led[11]} U3
+place_ports {led[12]} P3
+place_ports {led[13]} N3
+place_ports {led[14]} P1
+place_ports {led[15]} L1
+place_ports {sw[0]} V17
+place_ports {sw[1]} V16
+place_ports {sw[2]} W16
+place_ports {sw[3]} W17
+place_ports {sw[4]} W15
+place_ports {sw[5]} V15
+place_ports {sw[6]} W14
+place_ports {sw[7]} W13
+place_ports {sw[8]} V2
+place_ports {sw[9]} T3
+place_ports {sw[10]} T2
+place_ports {sw[11]} R3
+place_ports {sw[12]} W2
+place_ports {sw[13]} U1
+place_ports {sw[14]} T1
+place_ports {sw[15]} R2
+place_ports clk W5
+place_ports rst_btn T18
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_btn]]
+file mkdir {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new}
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc}}
+set_property target_constrs_file {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Feb 25 15:15:08 2026] Launched synth_1...
+Run output will be captured here: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/synth_1/runme.log
+[Wed Feb 25 15:15:09 2026] Launched impl_1...
+Run output will be captured here: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 2166.688 ; gain = 1.641
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A50A
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A50A
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:32 . Memory (MB): peak = 3494.312 ; gain = 0.031
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A50A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183AF2A50A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A50A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A50A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A50A
+close_hw_manager
+close_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+[Wed Feb 25 16:04:04 2026] Launched synth_1...
+Run output will be captured here: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3661.352 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc]
+Finished Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3661.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc]
+Finished Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 3881.121 ; gain = 219.383
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Wed Feb 25 16:13:16 2026] Launched synth_1...
+Run output will be captured here: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/synth_1/runme.log
+[Wed Feb 25 16:13:16 2026] Launched impl_1...
+Run output will be captured here: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4089.434 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc]
+Finished Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 4110.074 ; gain = 113.594
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4129.777 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.209 . Memory (MB): peak = 4129.777 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 4129.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4129.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 4129.777 ; gain = 0.000
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: top_module
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 4254.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm_counter' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+	Parameter COUNT bound to: 1'b0 
+	Parameter WAIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'fsm_counter' (3#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/Lab_5_CA.v:23]
+WARNING: [Synth 8-7071] port 'count' of module 'fsm_counter' is unconnected for instance 'fsm' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:41]
+WARNING: [Synth 8-7023] instance 'fsm' of module 'fsm_counter' has 6 connections declared, but only 5 given [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (4#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4254.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4254.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4254.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4254.141 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc]
+Finished Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4254.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4254.141 ; gain = 0.000
+11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4254.141 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 25 21:36:46 2026...
