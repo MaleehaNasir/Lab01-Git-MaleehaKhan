@@ -1,0 +1,6 @@
+*.wdb
+*.sim/
+*.runs/
+*.Xil/
+*.str
+*.rtd

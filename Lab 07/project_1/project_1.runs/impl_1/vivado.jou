@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar 18 13:58:33 2026
+# Process ID: 18016
+# Current directory: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log addressDecoderTop.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source addressDecoderTop.tcl -notrace
+# Log file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1/addressDecoderTop.vdi
+# Journal file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source addressDecoderTop.tcl -notrace

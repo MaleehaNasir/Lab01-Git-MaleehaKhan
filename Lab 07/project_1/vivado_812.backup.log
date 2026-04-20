@@ -1,0 +1,190 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar 18 22:18:18 2026
+# Process ID: 812
+# Current directory: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2068 C:\Users\malee\Documents\school\sem4\CA\labs\Lab01-Git-MaleehaKhan\Lab 07\project_1\project_1.xpr
+# Log file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/vivado.log
+# Journal file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:20 . Memory (MB): peak = 1024.836 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 18 22:21:44 2026...
+tarting synth_design
+Using part: xc7a35tcpg236-1
+Top: addressDecoderTop
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1364.465 ; gain = 235.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'addressDecoderTop' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/addressDecoderTop.v:2]
+INFO: [Synth 8-6157] synthesizing module 'address_decoder' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/address_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'address_decoder' (1#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/address_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_memory_mod' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/data_memory_mod.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory_mod' (2#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/data_memory_mod.v:23]
+INFO: [Synth 8-6157] synthesizing module 'leds' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/leds.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'leds' (3#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/leds.v:3]
+INFO: [Synth 8-6157] synthesizing module 'switches' [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/switches.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'switches' (4#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/switches.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'addressDecoderTop' (5#1) [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/addressDecoderTop.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1413.949 ; gain = 285.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1413.949 ; gain = 285.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1413.949 ; gain = 285.039
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1413.949 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[*]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[*]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[*]'. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1504.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:21 . Memory (MB): peak = 1535.293 ; gain = 406.383
+14 Infos, 39 Warnings, 39 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:31 . Memory (MB): peak = 1535.293 ; gain = 527.430
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 18 22:21:47 2026...

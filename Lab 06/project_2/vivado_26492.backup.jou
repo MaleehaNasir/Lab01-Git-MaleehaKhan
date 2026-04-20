@@ -1,0 +1,223 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar  4 11:55:02 2026
+# Process ID: 26492
+# Current directory: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29692 C:\Users\malee\Documents\school\sem4\CA\labs\Lab01-Git-MaleehaKhan\Lab 06\project_2\project_2.xpr
+# Log file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/vivado.log
+# Journal file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.srcs/sources_1/new/alu_fsm.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.srcs/sources_1/new/alu_fsm.v}}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+place_ports clk W5
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[15]}]]
+place_ports reset T18
+endgroup
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[11]}]]
+place_ports {switches_in[0]} V17
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[12]}]]
+place_ports {switches_in[1]} V16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[10]}]]
+place_ports {switches_in[2]} W16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[9]}]]
+place_ports {switches_in[3]} W17
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[7]}]]
+place_ports {switches_in[4]} W15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[8]}]]
+place_ports {switches_in[5]} V15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[5]}]]
+place_ports {switches_in[6]} W14
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[6]}]]
+place_ports {switches_in[7]} W13
+endgroup
+place_ports {switches_in[8]} V2
+place_ports {switches_in[9]} T3
+place_ports {switches_in[10]} T2
+place_ports {switches_in[11]} R3
+place_ports {switches_in[12]} W2
+place_ports {switches_in[13]} U1
+place_ports {switches_in[14]} T1
+place_ports {switches_in[15]} R2
+set_property IOSTANDARD LVCMOS33 [get_ports [list {switches_in[15]} {switches_in[14]} {switches_in[13]} {switches_in[12]} {switches_in[11]} {switches_in[10]} {switches_in[9]} {switches_in[8]} {switches_in[7]} {switches_in[6]} {switches_in[5]} {switches_in[4]} {switches_in[3]} {switches_in[2]} {switches_in[1]} {switches_in[0]}]]
+startgroup
+set_property package_pin "" [get_ports [list  {leds_out[3]}]]
+place_ports {leds_out[0]} U16
+endgroup
+place_ports {leds_out[1]} E19
+place_ports {leds_out[2]} U19
+place_ports {leds_out[3]} V19
+place_ports {leds_out[4]} W18
+place_ports {leds_out[5]} U15
+place_ports {leds_out[6]} U14
+place_ports {leds_out[7]} V14
+place_ports {leds_out[8]} V13
+place_ports {leds_out[9]} V3
+place_ports {leds_out[10]} W3
+place_ports {leds_out[11]} U3
+place_ports {leds_out[12]} P3
+place_ports {leds_out[13]} N3
+place_ports {leds_out[14]} P1
+place_ports {leds_out[15]} L1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {leds_out[15]} {leds_out[14]} {leds_out[13]} {leds_out[12]} {leds_out[11]} {leds_out[10]} {leds_out[9]} {leds_out[8]} {leds_out[7]} {leds_out[6]} {leds_out[5]} {leds_out[4]} {leds_out[3]} {leds_out[2]} {leds_out[1]} {leds_out[0]}]]
+file mkdir {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.srcs/constrs_1/new}
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.srcs/constrs_1/new/constr1.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.srcs/constrs_1/new/constr1.xdc}}
+set_property target_constrs_file {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.srcs/constrs_1/new/constr1.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top toplevelmodule [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top toplevelmodule [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 06/project_2/project_2.runs/impl_1/toplevelmodule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

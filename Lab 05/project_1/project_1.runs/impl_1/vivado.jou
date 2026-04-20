@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Feb 25 16:14:11 2026
+# Process ID: 65408
+# Current directory: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
+# Log file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1/top_module.vdi
+# Journal file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl -notrace

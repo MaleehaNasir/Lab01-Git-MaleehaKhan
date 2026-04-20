@@ -1,0 +1,208 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Mar 18 12:31:25 2026
+# Process ID: 3880
+# Current directory: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10940 C:\Users\malee\Documents\school\sem4\CA\labs\Lab01-Git-MaleehaKhan\Lab 07\project_1\project_1.xpr
+# Log file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/vivado.log
+# Journal file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1\vivado.jou
+#-----------------------------------------------------------start_gui
+open_project {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top fpga_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1
+file mkdir {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new}
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/constrs_1/new/const.xdc}}
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+close_design
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1/addressDecoderTop.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1/addressDecoderTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1/addressDecoderTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1/addressDecoderTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1/addressDecoderTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1/addressDecoderTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1/addressDecoderTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.runs/impl_1/addressDecoderTop.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/addressDecoderTop_tb.v} w ]
+add_files {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/addressDecoderTop_tb.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source addressDecoderTop_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source addressDecoderTop_tb.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source addressDecoderTop_tb.tcl
+close_sim
+launch_simulation
+source addressDecoderTop_tb.tcl
+close_sim
+export_ip_user_files -of_objects  [get_files {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/addressDecoderTop_tb.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sources_1/new/addressDecoderTop_tb.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sim_1/new
+file mkdir {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sim_1/new}
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sim_1/new/addressDecoderTop_tb.v} w ]
+add_files -fileset sim_1 {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 07/project_1/project_1.srcs/sim_1/new/addressDecoderTop_tb.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top addressDecoderTop_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source addressDecoderTop_tb.tcl
+close_sim
+launch_simulation
+source addressDecoderTop_tb.tcl
+close_sim
+launch_simulation
+source addressDecoderTop_tb.tcl
+run all
+current_wave_config {Untitled 7}
+add_wave {{/addressDecoderTop_tb/dut/u_data_mem}} 
+relaunch_sim
+run all
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top addressDecoder_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+source addressDecoderTop_tb.tcl
+current_wave_config {Untitled 8}
+add_wave {{/addressDecoderTop_tb/dut/u_data_mem}} 
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+close_design
+launch_simulation
+source addressDecoderTop_tb.tcl
+relaunch_sim
+run all
+close_sim
+launch_simulation
+launch_simulation
+source addressDecoderTop_tb.tcl
+add_wave {{/addressDecoderTop_tb/dut/u_data_mem}} 
+relaunch_sim
+current_wave_config {Untitled 11}
+add_wave {{/addressDecoderTop_tb/dut/u_addr_dec/dataMemRead}} {{/addressDecoderTop_tb/dut/u_addr_dec/dataMemWrite}} {{/addressDecoderTop_tb/dut/u_addr_dec/LEDWrite}} {{/addressDecoderTop_tb/dut/u_addr_dec/SwitchReadEnable}} 
+relaunch_sim
+current_wave_config {Untitled 11}
+add_wave {{/addressDecoderTop_tb/dut/u_leds/readData}} 
+synth_design -rtl -name rtl_1
+current_wave_config {Untitled 11}
+add_wave {{/addressDecoderTop_tb/dut/u_switches/readData}} 
+current_wave_config {Untitled 11}
+add_wave {{/addressDecoderTop_tb/dut/u_leds/readData}} 
+current_wave_config {Untitled 11}
+add_wave {{/addressDecoderTop_tb/dut/u_switches/readData}} 
+relaunch_sim
+run all

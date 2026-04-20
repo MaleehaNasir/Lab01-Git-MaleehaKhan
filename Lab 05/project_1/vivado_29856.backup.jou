@@ -1,0 +1,159 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Feb 25 12:03:29 2026
+# Process ID: 29856
+# Current directory: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16844 C:\Users\malee\Documents\school\sem4\CA\labs\Lab01-Git-MaleehaKhan\Lab 05\project_1\project_1.xpr
+# Log file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/vivado.log
+# Journal file: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/priority_encoder.v} w ]
+add_files {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/priority_encoder.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/priority_encoder.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/priority_encoder.v}}
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v} w ]
+add_files {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sources_1/new/top_module.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new
+file mkdir {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new}
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v} w ]
+add_files -fileset sim_1 {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/sim_1/new/testbench.v}}
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source top_module.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+relaunch_sim
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+source testbench.tcl
+run all
+close_sim
+launch_simulation
+source testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+close_design
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_design
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[15]} {led[14]} {led[13]} {led[12]} {led[11]} {led[10]} {led[9]} {led[8]} {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sw[15]} {sw[14]} {sw[13]} {sw[12]} {sw[11]} {sw[10]} {sw[9]} {sw[8]} {sw[7]} {sw[6]} {sw[5]} {sw[4]} {sw[3]} {sw[2]} {sw[1]} {sw[0]}]]
+startgroup
+set_property package_pin "" [get_ports [list  {led[3]}]]
+place_ports {led[0]} U16
+endgroup
+place_ports {led[1]} E19
+startgroup
+set_property package_pin "" [get_ports [list  {sw[4]}]]
+place_ports {led[2]} U19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[3]}]]
+place_ports {led[3]} V19
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {sw[2]}]]
+place_ports {led[4]} W18
+endgroup
+place_ports {led[5]} U15
+place_ports {led[6]} U14
+place_ports {led[7]} V14
+place_ports {led[8]} V13
+place_ports {led[9]} V3
+place_ports {led[10]} W3
+place_ports {led[11]} U3
+place_ports {led[12]} P3
+place_ports {led[13]} N3
+place_ports {led[14]} P1
+place_ports {led[15]} L1
+place_ports {sw[0]} V17
+place_ports {sw[1]} V16
+place_ports {sw[2]} W16
+place_ports {sw[3]} W17
+place_ports {sw[4]} W15
+place_ports {sw[5]} V15
+place_ports {sw[6]} W14
+place_ports {sw[7]} W13
+place_ports {sw[8]} V2
+place_ports {sw[9]} T3
+place_ports {sw[10]} T2
+place_ports {sw[11]} R3
+place_ports {sw[12]} W2
+place_ports {sw[13]} U1
+place_ports {sw[14]} T1
+place_ports {sw[15]} R2
+place_ports clk W5
+place_ports rst_btn T18
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_btn]]
+file mkdir {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new}
+close [ open {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc}}
+set_property target_constrs_file {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.srcs/constrs_1/new/constr1.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 05/project_1/project_1.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+close_hw_manager
+close_design
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+refresh_design
+close_design
+open_run impl_1
+close_design
+synth_design -rtl -name rtl_1
