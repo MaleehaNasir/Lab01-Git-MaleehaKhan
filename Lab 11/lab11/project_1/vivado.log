@@ -37,3 +37,26 @@ WARNING: [Vivado 12-1017] Problems encountered:
 launch_runs synth_1 -jobs 6
 [Mon Apr 20 17:56:26 2026] Launched synth_1...
 Run output will be captured here: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 11/lab11/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Mon Apr 20 18:03:20 2026] Launched impl_1...
+Run output will be captured here: C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-MaleehaKhan/Lab 11/lab11/project_1/project_1.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1151.473 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 76 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1225.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1330.422 ; gain = 305.672
+reset_run impl_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 20 18:04:28 2026...

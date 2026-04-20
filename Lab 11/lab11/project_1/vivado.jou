@@ -19,3 +19,7 @@ add_files -norecurse {{C:/Users/malee/Documents/school/sem4/CA/labs/Lab01-Git-Ma
 reset_run synth_1
 launch_runs synth_1 -jobs 6
 wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+reset_run impl_1
