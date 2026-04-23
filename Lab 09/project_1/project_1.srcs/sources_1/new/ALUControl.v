@@ -29,9 +29,7 @@ module ALUControl(
     );
     
     always @(*) begin
-        
-        alucontrol=4'b0000;//default is add
-        
+                
         case(aluop)
             2'b00:  alucontrol=4'b0000;
             
@@ -50,7 +48,8 @@ module ALUControl(
                     3'b100:alucontrol=4'b0110;
                     
                     default:
-                    alucontrol=4'b0000;
+                    alucontrol=4'b0000; //default is add
+                
                 endcase                     
             end
             

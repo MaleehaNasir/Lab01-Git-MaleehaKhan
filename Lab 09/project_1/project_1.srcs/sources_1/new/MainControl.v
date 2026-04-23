@@ -27,14 +27,7 @@ module MainControl(
     );
     
     always @(*) begin
-        regwrite = 1'b0;
-        alusrc=1'b0;
-        memread=1'b0;
-        memwrite=1'b0;
-        memtoreg=1'b0;
-        branch=1'b0;
-        aluop=2'b00;
-        
+    
         case(opcode)
             7'b0110011:begin //RTYPE
                 regwrite = 1'b1;
@@ -88,6 +81,13 @@ module MainControl(
             end
             
             default: begin
+                regwrite = 1'b0;
+                alusrc=1'b0;
+                memread=1'b0;
+                memwrite=1'b0;
+                memtoreg=1'b0;
+                branch=1'b0;
+                aluop=2'b00;
             end
         endcase    
         
