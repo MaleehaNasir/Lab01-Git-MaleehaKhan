@@ -22,7 +22,7 @@
 
 module MainControl(
  input [6:0] opcode,
- output reg regwrite, alusrc, memread, memwrite, memtoreg, branch,jump,
+ output reg regwrite, alusrc, memread, memwrite, memtoreg, branch,jump, jalr,
  output reg [1:0] aluop
  );
 
@@ -36,6 +36,7 @@ module MainControl(
              memtoreg=1'b0;
              branch=1'b0;
              jump = 1'b0;
+             jalr = 1'b0;
              aluop=2'b10;
         end
         7'b0010011: begin//ITYPE(ALU)
@@ -46,6 +47,7 @@ module MainControl(
              memtoreg=1'b0;
              branch=1'b0;
              jump = 1'b0;
+             jalr = 1'b0;
              aluop=2'b11;
         end        
         7'b0000011:begin //ITYPE(LOAD)
@@ -56,6 +58,7 @@ module MainControl(
              memtoreg=1'b1;
              branch=1'b0;
              jump = 1'b0;
+             jalr = 1'b0;
              aluop=2'b00;
         end
         7'b1100011:begin //SB TYPE
@@ -66,6 +69,7 @@ module MainControl(
              memtoreg=1'b0;//DC
              branch=1'b1;
              jump = 1'b0;
+             jalr = 1'b0;
              aluop=2'b01;
         end
         
@@ -77,6 +81,7 @@ module MainControl(
              memtoreg=1'b0;//DC
              branch=1'b0;
              jump = 1'b0;
+             jalr = 1'b0;
              aluop=2'b00;
         end
         
@@ -88,6 +93,19 @@ module MainControl(
             memtoreg=1'b0; 
             branch=1'b0; 
             jump=1'b1; 
+            jalr = 1'b0;
+            aluop=2'b00;
+        end
+        
+        7'b1100111: begin // JALR
+            regwrite=1'b1; 
+            alusrc=1'b1; 
+            memread=1'b0; 
+            memwrite=1'b0;
+            memtoreg=1'b0; 
+            branch=1'b0; 
+            jump=1'b0; 
+            jalr=1'b1; 
             aluop=2'b00;
         end
         
@@ -100,6 +118,7 @@ module MainControl(
              branch=1'b0;
              jump = 1'b0;
              aluop=2'b00;
+             jalr = 1'b0;
         end
      endcase
      end

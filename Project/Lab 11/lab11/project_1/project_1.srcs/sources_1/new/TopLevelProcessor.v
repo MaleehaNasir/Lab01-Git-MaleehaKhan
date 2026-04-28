@@ -22,13 +22,16 @@
 module TopLevelProcessor(
     input clk,
     input reset,
+    input [15:0] switches_in,
+    output [15:0] leds_out,    
     output [31:0] PC_out,
     output [31:0] ALU_out
 );
+
 wire [31:0] PC;
 wire [31:0] next_PC;
 wire [31:0] upd_PC;       
-wire [31:0] branch_tar;   
+wire [31:0] branch_tar; 
 
 wire [31:0] instruction;
 wire [6:0]  opcode  = instruction[6:0];
@@ -47,6 +50,7 @@ wire [31:0] ALUResult;
 wire zero;
 wire less;
 wire jump;
+wire jalr;
 wire PCSrc;
 //assign PCSrc = branch & zero;
 wire branch_taken;
@@ -54,9 +58,12 @@ assign branch_taken = branch & (
     (funct3 == 3'b000 &&  zero) | //beq
     (funct3 == 3'b001 && ~zero) | //bne
     (funct3 == 3'b100 &&  less)); //blt
-assign PCSrc = branch_taken | jump;
+assign PCSrc = branch_taken | jump | jalr;
 wire dataMemRead, dataMemWrite, LEDWrite, SwitchReadEnable;
-wire [31:0] memReadData;
+wire [31:0] dataMemReadData;
+wire [31:0] switchReadData;
+wire [31:0] ledReadData;
+wire [31:0] memReadData = SwitchReadEnable ? switchReadData : dataMemReadData;
 wire [31:0] writeBackData;
 
 
@@ -83,9 +90,13 @@ branchAdder branch_adder (
     .imm(imm),
     .branch_tar(branch_tar)
 );
+
+wire [31:0] jump_target;
+assign jump_target = jalr ? {ALUResult[31:1], 1'b0} : branch_tar;
+
 MUX pc_mux (
     .in0(upd_PC),
-    .in1(branch_tar),
+    .in1(jump_target),
     .select(PCSrc),
     .out(next_PC)
 );
@@ -98,6 +109,7 @@ MainControl control_unit (
     .memtoreg(memtoreg),
     .branch(branch),
     .jump(jump),
+    .jalr(jalr),
     .aluop(aluop)
 );
 RegisterFile register_file (
@@ -148,7 +160,30 @@ data_memory_mod data_memory (
     .memWrite(memwrite & dataMemWrite),
     .address(ALUResult[9:0]),
     .writeData(readData2),
-    .readData(memReadData)
+    .readData(dataMemReadData)
+);
+
+switches sw_inst (
+    .clk(clk),
+    .rst(reset),
+    .btns(16'b0),
+    .switches(switches_in),
+    .readEnable(SwitchReadEnable),
+    .writeData(32'b0),
+    .writeEnable(1'b0),
+    .readData(switchReadData)
+);
+
+leds led_inst (
+    .clk(clk),
+    .rst(reset),
+    .btns(16'b0),
+    .writeData(readData2),
+    .writeEnable(memwrite & LEDWrite),
+    .readEnable(1'b0),
+    .memAddress(30'b0),
+    .switches(switches_in),
+    .readData(ledReadData)
 );
 
 //MUX wb_mux (
@@ -158,12 +193,13 @@ data_memory_mod data_memory (
 //    .out(writeBackData)
 //);
 
-assign writeBackData = jump     ? upd_PC     :
-                       memtoreg ? memReadData :
-                                  ALUResult;
+assign writeBackData = (jump | jalr) ? upd_PC     :
+                        memtoreg     ? memReadData :
+                                       ALUResult;
 
 
 assign PC_out  = PC;
 assign ALU_out = ALUResult;
+assign leds_out = ledReadData[15:0];
 
 endmodule

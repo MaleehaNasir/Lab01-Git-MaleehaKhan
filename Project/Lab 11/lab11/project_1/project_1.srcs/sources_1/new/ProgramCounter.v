@@ -29,10 +29,10 @@ module ProgramCounter(
     
 //    wire [31:0]next_count;
     
-    always @(posedge clk or posedge reset) begin
-        if(reset) 
+    always @(posedge clk) begin
+        if (reset)
             PC <= 0;
-        else 
+        else
             PC <= next_PC;
     end
 endmodule
