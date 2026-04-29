@@ -56,7 +56,7 @@ module TopLevelProcessor_task_b_tb();
                    leds_out, PC_out, ALU_out);
         end
         else begin
-            $display("Task B passed: SLT, SLTI, and BGE produced LEDs=%04h", leds_out);
+            $display("Task B passed: SLT, BGE, and LUI program produced LEDs=%04h", leds_out);
         end
 
         $finish;
