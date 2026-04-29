@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/29/2026 05:03:36 AM
+// Create Date: 04/29/2026 09:48:38 PM
 // Design Name: 
-// Module Name: fpga_top_task_a
+// Module Name: fpga_top_task_c
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,21 +19,20 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module fpga_top_task_a(
+module fpga_top_task_c(
     input        clk,
-    input        btnL,       // reset
+    input        btnL,
     input  [15:0] sw,
     output [15:0] led,
-    // 7-segment display
     output reg [6:0] seg,
     output reg [3:0] an
-//    output           dp
 );
 
     wire [31:0] PC_out;
     wire [31:0] ALU_out;
     wire [15:0] leds_out;
-    reg [24:0] cpu_clk_div = 0;
+
+    reg [26:0] cpu_clk_div = 0;
 
     always @(posedge clk or posedge btnL) begin
         if (btnL)
@@ -43,7 +42,7 @@ module fpga_top_task_a(
     end
 
     TopLevelProcessor processor (
-        .clk(cpu_clk_div[24]),
+        .clk(cpu_clk_div[26]),
         .reset(btnL),
         .switches_in(sw),
         .leds_out(leds_out),
@@ -51,12 +50,13 @@ module fpga_top_task_a(
         .ALU_out(ALU_out)
     );
 
-    assign led = ALU_out[15:0];
+    assign led = sw[15] ? leds_out : ALU_out[15:0];
+
     reg [16:0] refresh_cnt = 0;
-    always @(posedge clk) refresh_cnt <= refresh_cnt + 1;
+    always @(posedge clk)
+        refresh_cnt <= refresh_cnt + 1;
 
     wire [1:0] digit_sel = refresh_cnt[16:15];
-
     reg [3:0] digit_val;
 
     always @(*) begin
@@ -68,7 +68,6 @@ module fpga_top_task_a(
         endcase
     end
 
-    // Hex to 7-segment decoder (active low: seg[6:0] = {g,f,e,d,c,b,a})
     always @(*) begin
         case (digit_val)
             4'h0: seg = 7'b1000000;

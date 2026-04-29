@@ -29,7 +29,7 @@ integer i;
 initial begin
     for (i = 0; i < 256; i = i + 1)
         memory[i] = 32'h00000013; // NOP
-    $readmemh("instructions_task_b.mem", memory);
+    $readmemh("instructions_task_c.mem", memory);
 end
 
 always @(*) begin
@@ -37,20 +37,3 @@ always @(*) begin
 end
 
 endmodule
-
-//testing
-//module instructionMemory(
-//    input  [31:0] instAddress,
-//    output reg [31:0] instruction
-//);
-//    always @(*) begin
-//        case (instAddress)
-//            32'd0:  instruction = 32'h00500513; // ADDI x10, x0, 5
-//            32'd4:  instruction = 32'h008000EF; // JAL x1, +8 (jump to PC=12)
-//            32'd8:  instruction = 32'h00A50513; // ADDI x10, x10, 10 (should be SKIPPED)
-//            32'd12: instruction = 32'h00008067; // JALR x0, 0(x1) (return to PC=8... wait no, x1=8 so returns to 8)
-//            32'd16: instruction = 32'h00000063; // BEQ x0,x0,0 halt
-//            default: instruction = 32'h00000013; // NOP
-//        endcase
-//    end
-//endmodule

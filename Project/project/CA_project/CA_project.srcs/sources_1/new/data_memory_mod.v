@@ -46,6 +46,13 @@ input [31:0] writeData,
 output [31:0] readData
 );
     reg [31:0] memory [0:511];
+    integer i;
+
+    initial begin
+        for (i = 0; i < 512; i = i + 1)
+            memory[i] = 32'b0;
+    end
+
     always @(posedge clk) begin
         if (memWrite) memory[address[8:0]]<=writeData;
     end

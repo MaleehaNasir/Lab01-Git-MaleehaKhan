@@ -43,4 +43,4 @@ module ALU_module(
     
     assign zero = (ALUResult == 32'b0);
     assign less = ($signed(A) < $signed(B));
-    endmodule
+endmodule

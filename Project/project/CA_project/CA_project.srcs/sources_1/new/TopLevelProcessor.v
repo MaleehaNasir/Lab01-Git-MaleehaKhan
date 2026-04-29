@@ -79,6 +79,7 @@ instructionMemory instr_mem (
     .instAddress(PC),
     .instruction(instruction)
 );
+
 pcAdder pc_plus4 (
     .PC(PC),
     .upd_PC(upd_PC)

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/Lenovo/Prabha/habib/semester 4/CA/CA Projects/CA_project/CA_project.xpr">
+<Project Version="7" Minor="49" Path="C:/Users/Lenovo/Lab01-Git-MaleehaKhan/Project/project/CA_project/CA_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="372441f0769d45c39f038d9e434304b2"/>
@@ -195,6 +195,14 @@
       <File Path="$PPRDIR/task b/instructions_task_b.mem">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/fpga_top_task_c.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>

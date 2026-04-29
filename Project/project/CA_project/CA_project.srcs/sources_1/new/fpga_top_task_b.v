@@ -13,7 +13,7 @@ module fpga_top_task_b(
     wire [31:0] ALU_out;
     wire [15:0] leds_out;
 
-    reg [24:0] cpu_clk_div = 0;
+    reg [26:0] cpu_clk_div = 0;
     always @(posedge clk or posedge btnL) begin
         if (btnL)
             cpu_clk_div <= 0;
@@ -22,7 +22,7 @@ module fpga_top_task_b(
     end
 
     TopLevelProcessor processor (
-        .clk(cpu_clk_div[24]),
+        .clk(cpu_clk_div[26]),
         .reset(btnL),
         .switches_in(sw),
         .leds_out(leds_out),
@@ -40,10 +40,10 @@ module fpga_top_task_b(
 
     always @(*) begin
         case (digit_sel)
-            2'b00: begin an = 4'b1110; digit_val = leds_out[3:0]; end
-            2'b01: begin an = 4'b1101; digit_val = leds_out[7:4]; end
-            2'b10: begin an = 4'b1011; digit_val = leds_out[11:8]; end
-            2'b11: begin an = 4'b0111; digit_val = leds_out[15:12]; end
+            2'b00: begin an = 4'b1110; digit_val = ALU_out[19:16]; end
+            2'b01: begin an = 4'b1101; digit_val = ALU_out[23:20]; end
+            2'b10: begin an = 4'b1011; digit_val = ALU_out[27:24]; end
+            2'b11: begin an = 4'b0111; digit_val = ALU_out[31:28]; end
         endcase
     end
 
