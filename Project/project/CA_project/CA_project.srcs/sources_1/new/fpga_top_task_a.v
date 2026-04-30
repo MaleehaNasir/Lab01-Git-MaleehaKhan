@@ -51,7 +51,7 @@ module fpga_top_task_a(
         .ALU_out(ALU_out)
     );
 
-    assign led = ALU_out[15:0];
+    assign led = leds_out;
     reg [16:0] refresh_cnt = 0;
     always @(posedge clk) refresh_cnt <= refresh_cnt + 1;
 
