@@ -1,13 +1,14 @@
 .text
 .globl start
 start:
-    addi t0, x0, 5
-    addi t1, x0, 7
+    addi t0, x0, 5 #5
+    addi t1, x0, 7 #7
 
-    slt  t2, t0, t1      # t2 = 1 because 5 < 7
+    slt  t2, t0, t1      # t2 = 1 
 
     bge  t1, t0, pass    # branch should be taken because 7 >= 5
-    addi t2, t2, 8       # failure path, should be skipped
+    addi t2, t2, 8       # failure path, should be skipped 
+    # output 2 because it skipped 
 
 pass:
     addi t2, t2, 6       # t2 = 7 if SLT and BGE worked
